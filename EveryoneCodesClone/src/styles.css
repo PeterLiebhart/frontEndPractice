@@ -23,6 +23,7 @@ nav ul {
   width: 50vw;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 #links {
@@ -34,9 +35,11 @@ nav ul {
 }
 
 .buttons {
-  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  font-family: "Arial";
   color: white;
   font-size: large;
+  justify-content: baseline;
 }
 
 
