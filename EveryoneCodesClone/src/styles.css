@@ -14,6 +14,17 @@ body {
   z-index: 1;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  box-shadow: 0px 0 60px rgb(0, 0, 0);
+  z-index: 100;
+}
+
 .background::before {
   content: "";
   position: absolute;
@@ -77,3 +88,36 @@ nav ul {
   transform: rotate(-45deg);
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#center-wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 60%;
+  height: 50%;
+}
+
+#big-text {
+  color: white;
+  font-size: 5rem;
+  font-family: "Arial";
+}
+
+#smaller-text {
+  color: white;
+  font-family: "Arial";
+  font-weight: 10;
+}
