@@ -12,20 +12,20 @@ body {
   background-size: cover;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 body::before {
   content: "";
   position: fixed;
-  top: -10px;
-  left: 0;
+  top: 0px;
   width: 100%;
   height: 10px;
-  box-shadow: 0px 0 60px rgb(0, 0, 0);
-  z-index: 100;
+  box-shadow: 0 30px 10px 20px rgba(25, 25, 25, 0.482);
+  z-index: 2;
 }
 
-.background::before {
+.background {
   content: "";
   position: absolute;
   top: 0;
@@ -33,7 +33,7 @@ body::before {
   height: 100%;
   width: 100%;
   background-image: url("https://img.pagecloud.com/ZGaCrIB0Y5pd_94vnuSTzdkpKt8=/2100x0/filters:no_upscale()/everyones-website/images/image-e3b82.jpeg");
-  background-size: 50%;
+  background-size:40%;
   opacity: 0.5;
   z-index: -1;
 }
@@ -43,9 +43,16 @@ nav {
   display: flex;
   background-color: transparent;
   justify-content: center;
-  overflow: hidden;
   z-index: 2;
 }
+nav::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  width: 100%;
+  box-shadow: -10px 0px 15px 20px rgb(25, 25, 25);
+}
+
 
 nav ul {
   margin-top: 3vh;
@@ -55,7 +62,7 @@ nav ul {
   align-items: center;
 }
 
-#links {
+#button-container {
   color: rgb(9, 2, 2);
   width: 50%;
   display: flex;
@@ -70,6 +77,38 @@ nav ul {
   font-size: large;
   justify-content: baseline;
 }
+
+.dropdown {
+  position: absolute;
+  list-style: none;
+  display: none;
+  width: inherit;
+  background-color: rgb(13, 17, 17);
+  padding: 0.5em 0em;
+  margin-left: -1em;
+  line-height: 2em;
+}
+
+.dropdown-options {
+  border-bottom: gray solid 0.01em;
+  width: 100%;
+  padding: 0.2em 1em;
+}
+
+
+.buttons:hover .dropdown {
+  display: block;
+}
+
+.last {
+  border-bottom: none;
+}
+
+.buttons:hover {
+  margin-top: 0.1em;
+  border-bottom: 0.15em solid rgb(166, 31, 233);
+}
+
 .left-icon, .right-icon {
   position: relative;
   display: inline-block;
@@ -103,21 +142,39 @@ nav ul {
 }
 
 .center-container {
+  margin-top:-5vh;
   display: flex;
   justify-content: start;
   align-items: start;
   width: 60%;
   height: 50%;
+  font-family: "Arial";
 }
 
 #big-text {
   color: white;
   font-size: 5rem;
-  font-family: "Arial";
 }
 
 #smaller-text {
   color: white;
-  font-family: "Arial";
   font-weight: 10;
+  font-size: 1.5rem;
+  margin-top: 1.5em;
+  line-height: 1.5em;
 }
+
+#learn-more {
+  font-family: "Arial";
+  margin-top: 1.5em;
+  font-size: 1.2rem;
+  padding: 1em 2.5em;
+  border: none;
+  outline: none;
+  border-radius: 2em;
+  color: white;
+  background-image: linear-gradient(90deg, rgb(222, 31, 222), rgb(118, 85, 175));
+}
+
+
+

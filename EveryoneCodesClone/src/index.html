@@ -8,35 +8,58 @@
   </head>
   <body>
     <div class="background"></div>
-      <nav>
-        <ul>
-          <div class="logo">
-            <img
-              src="/Users/peterliebhart/Desktop/PrivateProjects/FrontendPractice/frontEndPractice/EveryoneCodesClone/ressources/logo-fat-final.webp"
-              alt="logo"
-            />
-          </div>
-          <div id="links">
-            <li class="buttons">ABOUT US
-              <span class="left-icon"></span>
-              <span class="right-icon"></span>
-            </li>
-            <li class="buttons">PROGRAMMES
-              <span class="left-icon"></span>
-              <span class="right-icon"></span>
-            </li>
-            <li class="buttons">FOR COMPANIES
-              <span class="left-icon"></span>
-              <span class="right-icon"></span>
-            </li>
-          </div>
-        </ul>
-      </nav>
-      <div id="center-wrapper">
+    <nav>
+      <ul>
+        <div class="logo">
+          <img
+            src="/Users/peterliebhart/Desktop/PrivateProjects/FrontendPractice/frontEndPractice/EveryoneCodesClone/ressources/logo-fat-final.webp"
+            alt="logo"
+          />
+        </div>
+        <div id="button-container">
+          <li class="buttons" id="about-us">
+            ABOUT US
+            <span class="left-icon"></span>
+            <span class="right-icon"></span>
+            <ul class="dropdown">
+              <li class="dropdown-options">Mission</li>
+              <li class="dropdown-options">Stories</li>
+              <li class="dropdown-options">Prices & Awards</li>
+              <li class="dropdown-options">Team</li>
+              <li class="dropdown-options last">Contact</li>
+            </ul>
+          </li>
+          <li class="buttons" id="programmes">PROGRAMMES
+            <span class="left-icon"></span>
+            <span class="right-icon"></span>
+            <ul class="dropdown">
+              <li class="dropdown-options">Software Development (Vienna)</li>
+              <li class="dropdown-options">Software Development (Lower Austria)</li>
+              <li class="dropdown-options">User Experience</li>
+              <li class="dropdown-options last">IT, ist das was für mich?</li>
+            </ul>
+          </li>
+          <li class="buttons" id="for-companies">
+            FOR COMPANIES
+            <span class="left-icon"></span>
+            <span class="right-icon"></span>
+            <ul class="dropdown">
+              <li class="dropdown-options">Work with us</li>
+              <li class="dropdown-options last">Hire our graduates</li>
+            </ul>
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <div id="center-wrapper">
       <div class="center-container">
         <div class="text-container">
-          <h1 id="big-text">Your career in <br>IT starts here</h1><br><br>
-          <h2 id="smaller-text">With our high quality education programmes, we <br>help people start a better professional future in the IT <br>industry.</h2>
+          <h1 id="big-text">Your career in <br />IT starts here</h1>
+          <h2 id="smaller-text">
+            With our high quality education programmes, we <br />help people
+            start a better professional future in the IT <br />industry.
+          </h2>
+          <button id="learn-more">Learn More ↓</button>
         </div>
       </div>
     </div>
