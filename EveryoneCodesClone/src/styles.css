@@ -41,6 +41,7 @@ body::before {
 nav {
   position: relative;
   display: flex;
+  top: 8px;
   background-color: transparent;
   justify-content: center;
   z-index: 2;
@@ -76,37 +77,46 @@ nav ul {
   color: white;
   font-size: large;
   justify-content: baseline;
+  border-bottom: 0.15em solid rgb(166, 31, 233, 0);
+  transition: border-bottom 0.5s;
+}
+
+.buttons:hover {
+  border-bottom: 0.15em solid rgb(151, 47, 202);
 }
 
 .dropdown {
   position: absolute;
   list-style: none;
   display: none;
+  top: 33px;
   width: inherit;
-  background-color: rgb(13, 17, 17);
-  padding: 0.5em 0em;
+  background-color: rgb(19, 23, 23);
+  padding: 0em 0em;
   margin-left: -1em;
   line-height: 2em;
+  overflow: hidden;
+  color: rgb(203, 200, 200);
+  font-size: 1rem;
 }
 
 .dropdown-options {
-  border-bottom: gray solid 0.01em;
+  border-bottom: rgb(177, 175, 175) solid 0.01em;
   width: 100%;
   padding: 0.2em 1em;
+  transition: background-color 0.8s ease;
 }
 
+.dropdown-options:hover{
+  background-color: rgb(72, 82, 82);
+}
 
 .buttons:hover .dropdown {
   display: block;
 }
 
 .last {
-  border-bottom: none;
-}
-
-.buttons:hover {
-  margin-top: 0.1em;
-  border-bottom: 0.15em solid rgb(166, 31, 233);
+  border-bottom: transparent;
 }
 
 .left-icon, .right-icon {
@@ -174,6 +184,11 @@ nav ul {
   border-radius: 2em;
   color: white;
   background-image: linear-gradient(90deg, rgb(222, 31, 222), rgb(118, 85, 175));
+}
+
+#learn-more:hover {
+  background-image: linear-gradient(90deg, rgb(227, 59, 227), rgb(227, 59, 227));
+  box-shadow: 0 0 20px 0.1em rgb(227, 59, 227);
 }
 
 
