@@ -8,7 +8,7 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0;
-  background-image: url("/Users/peterliebhart/Desktop/PrivateProjects/FrontendPractice/frontEndPractice/EveryoneCodesClone/ressources/Background.png");
+  background-image: url("EveryoneCodesClone/ressources/Background.png");
   background-size: cover;
   position: relative;
   z-index: 1;
