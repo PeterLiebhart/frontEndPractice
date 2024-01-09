@@ -215,7 +215,7 @@ nav ul {
   display: none;
 }
 
-@media all and (max-width: 800px) {
+@media (max-width: 800px) {
 
   body {
     background-image: url("ressources/BackgroundMobile.png");
