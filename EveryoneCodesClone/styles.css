@@ -110,7 +110,7 @@ nav ul {
   border-bottom: rgb(177, 175, 175) solid 0.01em;
   width: 100%;
   padding: 0.2em 1em;
-  transition: background-color 0.8s ease;
+  transition: background-color 0.5s ease;
 }
 
 .dropdown-options:hover {
