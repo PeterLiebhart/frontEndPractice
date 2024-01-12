@@ -275,12 +275,10 @@ nav ul {
     justify-content: space-between;
   }
   #big-text {
-    margin-top: 0;
     font-size: 3rem;
   }
-  #small-text {
-    margin-top: 5px;
-    font-size: 1rem;
+  #smaller-text {
+    font-size: 1.5rem;
   }
   #center-wrapper {
     justify-content: center;
